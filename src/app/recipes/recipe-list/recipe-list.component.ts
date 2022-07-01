@@ -8,14 +8,17 @@ import { Recipe } from '../recipe.model';
   styleUrls: ['./recipe-list.component.css']
 })
 export class RecipeListComponent implements OnInit {
-
-  constructor() { }
   recipes: Recipe[] = [
+    new Recipe('A test Recipe', 'This is simply a test',
+    'https://www.cookingclassy.com/wp-content/uploads/2022/05/bolognese-2.jpg' ),
     new Recipe('A test Recipe', 'This is simply a test',
     'https://www.cookingclassy.com/wp-content/uploads/2022/05/bolognese-2.jpg' )
   ];
+  
 
-  ngOnInit(): void {
+  constructor() { }
+
+  ngOnInit() {
   }
 
 }
